@@ -18,7 +18,7 @@ const BlogPage = () => {
 
   useEffect(() => {
     async function fetchBlogs() {
-      let url = `${process.env.NEXT_PUBLIC_SITE_URL}/api/posts?pages=${currentPage}&limit=${pageSize}`;
+      let url = `${process.env.NEXT_PUBLIC_BASE_API_URL}/api/posts?pages=${currentPage}&limit=${pageSize}`;
 
       // filter by category
       if (selectedCategory){
@@ -49,9 +49,9 @@ const BlogPage = () => {
 
   // console.log(blogs)
 
-  if(!process.env.NEXT_PUBLIC_SITE_URL) {
-    return null;
-  }
+  // if(!process.env.NEXT_PUBLIC_SITE_URL) {
+  //   return null;
+  // }
 
 
 
