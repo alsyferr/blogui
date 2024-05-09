@@ -47,6 +47,8 @@ const BlogPage = () => {
 
   // console.log(blogs)
 
+
+
   return (
     <div>
        {/* category section */}
