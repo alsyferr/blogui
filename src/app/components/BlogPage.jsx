@@ -49,6 +49,10 @@ const BlogPage = () => {
 
   // console.log(blogs)
 
+  if(!process.env.NEXT_PUBLIC_SITE_URL) {
+    return null;
+  }
+
 
 
   return (
