@@ -7,6 +7,8 @@ import SideBar from './SideBar';
 import { Suspense } from 'react'
 
 const BlogPage = () => {
+
+
   const [blogs, setBlogs] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 12 //number of blogs per page
