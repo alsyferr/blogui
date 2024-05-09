@@ -16,7 +16,7 @@ const BlogPage = () => {
 
   useEffect(() => {
     async function fetchBlogs() {
-      let url = `http://localhost:3000/api/posts?pages=${currentPage}&limit=${pageSize}`;
+      let url = `${process.env.NEXT_PUBLIC_SITE_URL}/api/posts?pages=${currentPage}&limit=${pageSize}`;
 
       // filter by category
       if (selectedCategory){

@@ -4,7 +4,7 @@ import { FaUser, FaClock } from 'react-icons/fa';
 import SideBar from '@/app/components/SideBar';
 
 async function getData(id) {
-  const res = await fetch(`http://localhost:3000/api/post/${id}`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/post/${id}`, {
     cache:"no-store"
   })
 

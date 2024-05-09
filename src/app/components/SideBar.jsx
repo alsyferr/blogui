@@ -8,7 +8,7 @@ const SideBar = () => {
     const [popularBlogs, setPopularBlogs] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/api/posts").then(res => res.json() ).then(data => setPopularBlogs(data.slice(0, 15)))
+        fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/posts`).then(res => res.json() ).then(data => setPopularBlogs(data.slice(0, 15)))
     }, [])
 
   return (
